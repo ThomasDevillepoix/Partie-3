@@ -1,0 +1,16 @@
+@media screen and (max-width: 480px) /* on reprend les id et classes de la feuille CSS normale et on change les parametres pour qu'ils soient responsive */
+{
+#BlocMax {
+    flex-direction: column;
+}
+#MenuBurger {
+    display: flex;
+    color: #f25e23;
+}
+.NavBar {
+    display: none;
+}
+#BlocHead {
+    font-size: 15px;
+}
+

@@ -2,43 +2,44 @@
 <html lang="fr" dir="ltr">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--meta utilisée pour le responsive-->
         <link rel="stylesheet" href="ASSETS/CSS/style.css">
-        <title>CSS Responsive</title>
+        <link rel="stylesheet" href="../Partie4/ASSETS/CSS/style2.css">
+        <script src="https://kit.fontawesome.com/fe6dad5f6a.js" crossorigin="anonymous"></script>
+        <title>Voyage & Co</title> <!--Titre visible sur l'onglet-->
     </head>
-    <body>
-        <header id="BlocHead">
-            <h1 id="TitBlack">Voyage & Co</h1>
+    <body id="Body">
+        <header id="BlocHead"> <!--Balise header, inserer le titre dedans / permet de ne changer que les attributs du header ( sera effectif sur ce qu'il y a dedans, ici le titre )-->
+            <h1>Voyage & Co</h1> 
         </header>
-        <nav id="Nav">
-            <a  href="url Page accueil">Accueil</a>
-            <a  href="url Page Destinations">Destinations</a>
-            <a  href="url page reservations">Réservations</a>
-            <a  href="url page contact">Contact</a>
-            <div id="Rech">
-                <input type="search"name="Rechercher"id="Rechercher">
-                <label for="Rechercher"></label>
-                <input type="button" value="Rechercher"name="Rechercher"id="Rechercher">
-            </div>
+        <nav id="Nav"> <!--Balise de creation de barre de navigation-->
+            <ul id="ul">
+                <li class="NavBar"><a  href="url Page accueil">Accueil</a></li>
+                <li class="NavBar"><a  href="url Page Destinations">Destinations</a></li>
+                <li class="NavBar"><a  href="url page reservations">Réservations</a></li>
+                <li class="NavBar"><a  href="url page contact">Contact</a></li>
+                <li class="NavBar"><form action="#" method="GET">
+                    <label for="Rechercher"></label >
+                    <input type="search"name="search"placeholder="Recherche">
+                    <input type="submit" value="Rechercher"name="Button"id="Rechercher"></form></li>
+                <li id="MenuBurger"><i class="fas fa-bars" ></i></li>
+            </ul>
         </nav>
-            <div id="Text"> <p>Bienvenue sur le site de Voyages & Co, <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, qui ex quaerat cum aliquid eligendi magni nesciunt sunt quisquam facilis ipsam error nobis animi ea vero cumque ut nostrum aut!</p></div>
+            <div id="blocText"> <p id="Text">Bienvenue sur le site de Voyage & Co, <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, qui ex quaerat cum aliquid eligendi magni nesciunt sunt quisquam facilis ipsam error nobis animi ea vero cumque ut nostrum aut!</p></div>
             <div id="BlocMax">
                 <div class="BlocPhoto">
-                    <div><h1 class="TitImg">Couché de soleil</h1></div>
-                    <div class="img"><img src="../Partie4/ASSETS/Image/voyage.jpg" alt="Couché de soleil au bord de la mer" title="Couché de soleil" ></div>
+                    <div id="img1"><h2 id="TitImg1">Indonésie</h2></div>
                     <div><p class="Desc">Voici un aperçu de vos prochaines vacances <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident delectus incidunt nihil expedita in temporibus iste ullam consectetur, doloribus odio saepe vel accusamus fugit placeat, esse explicabo quisquam illo at. </p></div>
                 </div>
                 <div class="BlocPhoto">
-                    <div><h2 class="TitImg">Valise</h2></div>
-                    <div class="img"><img src="../Partie4/ASSETS/Image/valise.jpg" alt="Valise prete à partir" title="Valise"></div>
+                    <div id="img2"><h2 id="TitImg2">Bora-Bora</h2></div>
                     <div><p class="Desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus non voluptas dicta quibusdam fuga provident. Accusantium sed, voluptates sint laudantium, in molestiae fugit quisquam voluptatem delectus, voluptas veniam dolorum amet?</p></div>
                 </div>
                 <div class="BlocPhoto">
-                    <div><h2 class="TitImg">Avion</h2></div>
-                    <div class="img"><img src="../Partie4/ASSETS/Image/avion.jpg" alt="Avion" title="Avion"></div>
+                    
+                    <div id="img3"><h2 id="TitImg3">Week-end en amoureux</h2></div>
                     <div><p class="Desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis necessitatibus odit obcaecati quas itaque, earum recusandae ullam architecto? Eligendi amet voluptates nostrum sed, quam fuga quaerat? Vero quam ea consequuntur.</p></div>
                 </div>
-                
             </div>
     </body>
 </html>
